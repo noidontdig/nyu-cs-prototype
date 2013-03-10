@@ -5,10 +5,7 @@ $debug: false;
 @import "CSS";
 
 body {
-    margin: rhythm();
-    line-height: rhythm();
-
-    @include debug-rhythm;
+  line-height: rhythm();
 }
 
 $h1-font-size : 1.5 * $base-font-size;
