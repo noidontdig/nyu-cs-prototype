@@ -39,7 +39,12 @@ p {
 ul, ol, dl {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+<<<<<<< HEAD
   padding-left: 0; }
+=======
+  padding-left: 0;
+}
+>>>>>>> 33eee5760bd3de68daf37d5c7f377ca43e44bcb4
 
 /************************************/
 .down-arrow {
