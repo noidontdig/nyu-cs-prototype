@@ -28,12 +28,12 @@ ul, ol, dl {
 
 /************************************/
 /************************************/
-header {
+header, footer {
   width: 100%;
   background-color: #ccc; }
-  header ul {
+  header ul, footer ul {
     margin: 0; }
-  header ul li {
+  header ul li, footer ul li {
     display: inline;
     margin-bottom: 1.5em; }
 
