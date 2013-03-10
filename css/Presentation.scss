@@ -41,15 +41,43 @@ p {
 }
 
 ul, ol, dl {
-  @include v-margin(rhythm()) ;   
+  @include v-margin(rhythm());
+  padding-left: 0;
 }
 
 
 
+/************************************/
+
+
+/************************************/
+
+$main-nav-height: 100px;
+
+
 header {
   width: 100%;
-  height: 20px;
-  background-color: red;
+  background-color: #ccc;
+
+  ul { margin: 0; }
+  ul li { 
+    display: inline;
+    @include v-margin(rhythm());
+  }
+}
+
+.menu {
+  height: rhythm(3);
+  background-color: blue;
+
+  nav { float: right; }
+}
+
+.submenu {
+  height: rhythm(2);
+  background-color: orange;
+
+  nav { float: left; }
 }
 
 .container {
