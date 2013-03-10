@@ -3,6 +3,7 @@ $debug: true;
 
 @import "Rhythm";
 @import "CSS";
+@import "Variables";
 
 body {
   line-height: rhythm();
