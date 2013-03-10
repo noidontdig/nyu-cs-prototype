@@ -1,0 +1,78 @@
+body {
+  margin: 1.5em;
+  line-height: 1.5em;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 24px;
+}
+
+h2 {
+  margin-bottom: 1.2em;
+  font-size: 20px;
+}
+
+h1, h2, h3 {
+  margin-bottom: rhythm;
+}
+
+h3.inline {
+  display: run-in;
+  font-size: 1em;
+}
+h3.inline:after {
+  content: ". ";
+  font-wheight: normal;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+ul, ol, dl {
+  margin-bottom: 1.5em;
+}
+
+dl.terms {
+  margin-bottom: -1.5em;
+}
+dl.terms dt, dl.terms dd {
+  display: inline;
+}
+dl.terms dt {
+  font-style: italic;
+}
+dl.terms dt:after {
+  content: ". ";
+}
+dl.terms dd {
+  margin-left: 0;
+}
+dl.terms dd:after {
+  content: "\A\A";
+  white-space: pre;
+}
+
+dl.dates {
+  margin-bottom: -1.5em;
+}
+dl.dates dt, dl.dates dd {
+  display: inline;
+}
+dl.dates dt:before {
+  content: "(";
+}
+dl.dates dt:after {
+  content: ") ";
+}
+dl.dates dd {
+  margin-left: 0;
+}
+dl.dates dd:after {
+  content: "\A\A";
+  white-space: pre;
+}
+dl.dates ul, dl.dates ol, dl.dates dl {
+  margin-bottom: -1.5em;
+}

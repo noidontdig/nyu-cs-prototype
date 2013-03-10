@@ -1,0 +1,84 @@
+
+$debug: false;
+
+@import "Rhythm";
+@import "CSS";
+
+body {
+    margin: rhythm();
+    line-height: rhythm();
+
+    @include debug-rhythm;
+}
+
+$h1-font-size : 1.5 * $base-font-size;
+$h2-font-size : 1.25 * $base-font-size;
+
+h1 {
+  @include v-margin(rhythm(1, $h1-font-size));
+  font-size: $h1-font-size;
+}
+
+h2 {
+  @include v-margin(rhythm(1, $h2-font-size));
+  font-size: $h2-font-size;
+}
+
+h1, h2, h3 {
+  @include v-margin(rhythm);
+}
+
+h3.inline {
+  display: run-in;
+  font-size: 1em;
+
+  // '&' names parent selector
+  &:after {
+    content: ". ";
+    font-wheight: normal;
+  }
+}
+
+p {
+  @include v-margin(rhythm());
+}
+
+ul, ol, dl {
+  @include v-margin(rhythm()) ;   
+}
+
+dl.terms {
+  @include v-margin(rhythm(), rhythm(-1));
+
+  dt, dd { display: inline; }
+  dt { 
+    font-style: italic; 
+    &:after {
+      content: ". "
+    }
+  }
+  dd {
+    margin-left: 0;
+    &:after {
+      content: "\A\A"; // 2 line breaks
+                       // but HTML ignores spaces
+      white-space: pre; // Now it won't! HTML will 
+                        // treat the white-space like 
+                        // in the pre tag
+    }
+  }
+}
+
+dl.dates {
+  @include v-margin(rhythm(), rhythm(-1));
+
+  dt, dd { display: inline; }
+  dt:before { content: "("; }
+  dt:after { content: ") "; }
+  dd { margin-left: 0; }
+  dd:after { content: "\A\A"; white-space: pre; }
+
+  ul, ol, dl {
+    @include v-margin(rhythm(), rhythm(-1));
+  }
+}

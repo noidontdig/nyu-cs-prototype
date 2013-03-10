@@ -1,0 +1,22 @@
+$base-font-size     : 16px  !default;
+$base-rhythm-factor : 1.5   !default;
+
+$base-line-height   : $base-rhythm-factor * $base-font-size;
+$font-unit          : 1em;
+
+// SCSS supports default arguments
+@function remify($pixels, $font-size: $base-font-size)  {
+  @return $font-unit * $pixels / $font-size;
+}
+
+@function rhythm($lines: 1, $font-size: $base-font-size) {
+  @return $font-unit * $lines * $base-line-height / $font-size;
+}
+
+// If the debug flag is set, set background image 
+// to our vertical rhythm gif
+@mixin debug-rhythm($height: $base-line-height) {
+  @if $debug {
+    background-image: url('rhythm#{$height/1px}.gif'); 
+  }
+}
