@@ -17,6 +17,6 @@ $font-unit          : 1em;
 // to our vertical rhythm gif
 @mixin debug-rhythm($height: $base-line-height) {
   @if $debug {
-    background-image: url('rhythm#{$height/1px}.gif'); 
+    background-image: url('debug/rhythm#{$height/1px}.gif'); 
   }
 }
