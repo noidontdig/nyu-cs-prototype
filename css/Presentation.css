@@ -7,6 +7,7 @@
   background-color: #e1e1ff;
   padding-left: 1em;
   padding-right: 1em;
+  margin-left: 2em;
   float: right;
   font-size: 12px;
   text-align: center; }
@@ -27,6 +28,25 @@
     margin-top: 0;
     margin-bottom: 0;
     list-style-type: none; }
+  .events-wrapper p {
+    margin-top: 2em;
+    margin-bottom: 0; }
+
+.news-wrapper {
+  background-color: #e1e1ff;
+  padding: 0 2em;
+  max-width: 50%;
+  float: top;
+  text-align: center; }
+  .news-wrapper dl {
+    text-align: left; }
+  .news-wrapper dt, .news-wrapper dd {
+    display: inline; }
+  .news-wrapper dt {
+    font-weight: bold; }
+  .news-wrapper dd:after {
+    content: "\A\A";
+    white-space: pre; }
 
 /******************************************************/
 body {

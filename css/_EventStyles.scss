@@ -1,11 +1,8 @@
-.main-text {
-    //background-color: grey;
-}
-
 .events-wrapper {
     background-color: $light;
     padding-left: 1em;
     padding-right: 1em;
+    margin-left: 2em;
     float: right;
     
     $dt-font-size : 0.75 * $base-font-size;
@@ -30,8 +27,6 @@
 	@include v-margin(0);
 	list-style-type: none;
     }
-}
 
-.news {
-    //background-color: red;
+    p { @include v-margin(rhythm(1, $dt-font-size), 0); }
 }
