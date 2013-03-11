@@ -3,7 +3,12 @@ $debug: true;
 
 @import "Rhythm";
 @import "CSS";
+@import "Layout";
 @import "Variables";
+
+/****** should later be integrated into this file *****/
+@import "EventStyles";
+/******************************************************/
 
 body {
   line-height: rhythm();
@@ -13,6 +18,12 @@ body {
 $h1-font-size : 1.5 * $base-font-size;
 $h2-font-size : 1.25 * $base-font-size;
 $h3-font-size : 1 * $base-font-size;
+$h4-font-size : 0.9 * $base-font-size;
+$h5-font-size : 0.8 * $base-font-size;
+$h6-font-size : 0.7 * $base-font-size;
+
+$tiny-font-size: 0.5 * $base-font-size;
+
 
 h1 {
   @include v-margin(rhythm(1, $h1-font-size));
@@ -57,6 +68,7 @@ ul, ol, dl {
 
 /************************************/
 
+.down-arrow { font-size: $tiny-font-size; }
 
 /************************************/
 
@@ -72,14 +84,23 @@ header, footer {
       display: inline;
       @include v-margin(rhythm());
   }
+}
 
+footer {
+  height: rhythm(6);
 }
 
 .menu {
   height: rhythm(3);
   background-color: blue;
 
-  nav { float: right; }
+  nav { 
+    float: right;
+
+    a {
+
+    }
+  }
 }
 
 .submenu {
@@ -87,10 +108,5 @@ header, footer {
   background-color: orange;
 
   nav { float: left; }
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
 }
 
