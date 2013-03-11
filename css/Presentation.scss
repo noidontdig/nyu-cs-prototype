@@ -6,6 +6,10 @@ $debug: true;
 @import "Layout";
 @import "Variables";
 
+/****** should later be integrated into this file *****/
+@import "EventStyles";
+/******************************************************/
+
 body {
   line-height: rhythm();
   @include debug-rhythm();
@@ -105,19 +109,4 @@ footer {
 
   nav { float: left; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
