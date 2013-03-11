@@ -3,13 +3,30 @@
   margin: 0 auto; }
 
 /****** should later be integrated into this file *****/
-.main-text {
-  background-color: grey; }
-
-.events ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style-type: none; }
+.events-wrapper {
+  background-color: #e1e1ff;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: right;
+  font-size: 12px;
+  text-align: center; }
+  .events-wrapper dl {
+    max-width: 20em; }
+  .events-wrapper dt {
+    text-align: right;
+    margin-top: 2em;
+    margin-bottom: 0; }
+  .events-wrapper dd {
+    margin-top: 0em;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-align: right;
+    margin-left: 0;
+    max-width: 20em; }
+  .events-wrapper ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none; }
 
 /******************************************************/
 body {
@@ -30,6 +47,21 @@ h3 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   font-size: 16px; }
+
+h4 {
+  margin-top: 1.66667em;
+  margin-bottom: 1.66667em;
+  font-size: 14.4px; }
+
+h5 {
+  margin-top: 1.875em;
+  margin-bottom: 1.875em;
+  font-size: 12.8px; }
+
+h6 {
+  margin-top: 2.14286em;
+  margin-bottom: 2.14286em;
+  font-size: 11.2px; }
 
 h1, h2, h3 {
   margin-top: rhythm;
@@ -68,7 +100,9 @@ header, footer {
     margin-bottom: 1.5em; }
 
 footer {
-  height: 9em; }
+  height: 9em;
+  /* Had to add this to clear .event-wrapper. Remove with caution */
+  clear: both; }
 
 .menu {
   height: 4.5em;

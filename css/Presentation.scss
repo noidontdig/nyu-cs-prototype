@@ -29,15 +29,25 @@ h1 {
   @include v-margin(rhythm(1, $h1-font-size));
   font-size: $h1-font-size;
 }
-
 h2 {
   @include v-margin(rhythm(1, $h2-font-size));
   font-size: $h2-font-size;
 }
-
 h3 {
   @include v-margin(rhythm(1, $h3-font-size));
   font-size: $h3-font-size;
+}
+h4 {
+  @include v-margin(rhythm(1, $h4-font-size));
+  font-size: $h4-font-size;
+}
+h5 {
+  @include v-margin(rhythm(1, $h5-font-size));
+  font-size: $h5-font-size;
+}
+h6 {
+  @include v-margin(rhythm(1, $h6-font-size));
+  font-size: $h6-font-size;
 }
 
 h1, h2, h3 {
@@ -88,6 +98,9 @@ header, footer {
 
 footer {
   height: rhythm(6);
+
+  /* Had to add this to clear .event-wrapper. Remove with caution */
+  clear: both;
 }
 
 .menu {
