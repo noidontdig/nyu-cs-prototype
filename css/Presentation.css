@@ -2,55 +2,10 @@
   max-width: 960px;
   margin: 0 auto; }
 
-/****** should later be integrated into this file *****/
-.events-wrapper {
-  background-color: #e1e1ff;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: 2em;
-  float: right;
-  font-size: 12px;
-  text-align: center; }
-  .events-wrapper dl {
-    max-width: 20em; }
-  .events-wrapper dt {
-    text-align: right;
-    margin-top: 2em;
-    margin-bottom: 0; }
-  .events-wrapper dd {
-    margin-top: 0em;
-    margin-bottom: 0;
-    font-size: 12px;
-    text-align: right;
-    margin-left: 0;
-    max-width: 20em; }
-  .events-wrapper ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    list-style-type: none; }
-  .events-wrapper p {
-    margin-top: 2em;
-    margin-bottom: 0; }
-
-.news-wrapper {
-  background-color: #e1e1ff;
-  padding: 0 2em;
-  max-width: 50%;
-  float: top;
-  text-align: center; }
-  .news-wrapper dl {
-    text-align: left; }
-  .news-wrapper dt, .news-wrapper dd {
-    display: inline; }
-  .news-wrapper dt {
-    font-weight: bold; }
-  .news-wrapper dd:after {
-    content: "\A\A";
-    white-space: pre; }
-
 /******************************************************/
 body {
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  font-family: Verdana, Geneva, sans-serif; }
 
 h1 {
   margin-top: 1em;
@@ -86,6 +41,10 @@ h1, h2, h3 {
   margin-top: rhythm;
   margin-bottom: rhythm; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: normal; }
+
 h3.inline {
   display: run-in;
   font-size: 1em; }
@@ -106,23 +65,13 @@ a {
   color: #3e79ee;
   font-weight: bold;
   text-decoration: none;
-  padding: 0 3px; }
+  padding: 0 1px; }
   a:hover {
     color: #2053b9;
     text-decoration: none; }
 
-/************************************/
-.down-arrow {
-  font-size: 8px; }
-
-.inline {
-  display: inline; }
-
-/************************************/
-/* $main-nav-height: 100px; */
 header, footer {
-  width: 100%;
-  background-color: transparent; }
+  width: 100%; }
   header ul, footer ul {
     margin: 0; }
   header ul li, footer ul li {
@@ -140,23 +89,37 @@ footer {
   footer ul {
     float: right; }
   footer ul li:after {
-    color: #aaaaaa;
-    content: " \00b7 "; }
+    color: #999999;
+    content: "  \00b7  "; }
   footer ul li:last-child:after {
     content: ""; }
   footer ul li:last-child:before {
-    content: " "; }
+    content: "  "; }
   footer a {
     font-weight: normal;
-    color: #aaaaaa; }
+    font-size: smaller;
+    color: #999999; }
     footer a:hover {
-      color: #999999; }
+      color: #777777; }
 
+/************************************/
+.down-arrow {
+  font-size: 8px; }
+
+.inline {
+  display: inline; }
+
+.hero {
+  color: #444;
+  font-size: 24px;
+  line-height: 2em; }
+
+/************************************/
 .menu {
   height: 4.5em; }
   .menu .logo-wrapper {
     width: 140px;
-    background-color: red;
+    background-color: purple;
     height: 100%;
     float: left; }
   .menu .menu-nav-list {
@@ -177,19 +140,52 @@ footer {
   .submenu nav {
     float: left; }
 
-@media only screen and (max-width: 519px) {
+.events-wrapper dt, .events-wrapper dd {
+  font-size: 12.8px; }
+.events-wrapper dt {
+  margin-top: 1.875em;
+  margin-bottom: 0; }
+.events-wrapper dd {
+  margin-top: 0em;
+  margin-bottom: 0;
+  margin-left: 0; }
+.events-wrapper ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none; }
+
+.news-wrapper {
+  border-top: 1px solid #0e7d8e;
+  margin-top: -1px;
+  /* to offset border-top */ }
+  .news-wrapper dt, .news-wrapper dd {
+    display: inline;
+    margin: 0; }
+  .news-wrapper dt {
+    font-weight: bold; }
+    .news-wrapper dt:after {
+      content: ". "; }
+  .news-wrapper dd:after {
+    content: "\A\A";
+    white-space: pre; }
+
+/* Responsive */
+.responsive {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
   .too-small {
     display: inherit; }
 
   .too-small.inline {
     display: inline; } }
-@media only screen and (min-width: 520px) and (max-width: 799px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
   .just-right {
     display: inherit; }
 
   .just-right.inline {
     display: inline; } }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 959px) {
   .too-big {
     display: inherit; }
 

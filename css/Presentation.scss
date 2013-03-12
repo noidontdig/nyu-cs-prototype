@@ -1,19 +1,17 @@
 
 $debug: false;
 
+@import "Constants";
 @import "Rhythm";
 @import "CSS";
 @import "Layout";
-@import "Variables";
 
-/****** should later be integrated into this file *****/
-@import "EventStyles";
-@import "NewsStyles";
 /******************************************************/
 
 body {
   line-height: rhythm();
   @include debug-rhythm();
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 $h1-font-size : 1.5 * $base-font-size;
@@ -55,6 +53,11 @@ h1, h2, h3 {
   @include v-margin(rhythm);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+}
+
 h3.inline {
   display: run-in;
   font-size: 1em;
@@ -79,7 +82,7 @@ a {
   color: rgb(62, 121, 238);
   font-weight: bold;
   text-decoration: none;
-  padding: 0 3px;
+  padding: 0 1px;
 
   &:hover {
     color: rgb(32, 83, 185);
@@ -88,21 +91,8 @@ a {
 }
 
 
-/************************************/
-
-.down-arrow { font-size: $tiny-font-size; }
-
-
-.inline { display: inline; }
-
-/************************************/
-
-/* $main-nav-height: 100px; */
-
-
 header, footer {
   width: 100%;
-  background-color: transparent;
 
   ul { margin: 0; }
   ul li { 
@@ -119,13 +109,14 @@ footer {
   ul li {
     &:after {
       color: $footer-grey;
-      content: " \00b7 ";
+      content: "  \00b7  ";
     }
     &:last-child:after { content: ""; }
-    &:last-child:before { content: " "; }
+    &:last-child:before { content: "  "; }
   }
   a { 
     font-weight: normal;
+    font-size: smaller;
     color: $footer-grey;
     &:hover {
       color: $footer-grey-hover;
@@ -136,12 +127,29 @@ footer {
   clear: both;
 }
 
+
+/************************************/
+
+.down-arrow { font-size: $tiny-font-size; }
+
+
+.inline { display: inline; }
+.hero { 
+  color: #444;
+  font-size: $h1-font-size;
+  line-height: rhythm(1, $h1-font-size / 2);
+}
+
+
+/************************************/
+
+
 .menu {
   height: rhythm(3);
 
   .logo-wrapper {
     width: 140px;
-    background-color: red;
+    background-color: purple;
     height: 100%;
     float: left;
   }
@@ -170,28 +178,70 @@ footer {
 
 
 
-@media only screen and (max-width: 519px) {
+
+.events-wrapper {
+  $dt-font-size: $base-font-size * 0.8;  
+  dt, dd {
+    font-size: $dt-font-size;
+  }
+
+  dt { 
+    @include v-margin(rhythm(1, $dt-font-size), 0);
+  }
+  dd {
+    @include v-margin(rhythm(0, $dt-font-size), 0);
+    margin-left: 0; 
+  }
+  
+  ul {
+    @include v-margin(0);
+    list-style-type: none;
+  }
+}
+
+
+.news-wrapper {
+  border-top: 1px solid #0e7d8e;
+  margin-top: -1px; /* to offset border-top */
+
+  dt, dd { display: inline; margin: 0; }
+
+  dt {
+    font-weight: bold;
+
+    &:after {
+      content: ". ";
+    }
+  }
+
+  dd:after{
+    content: "\A\A";
+    white-space: pre;
+  }
+}
+
+
+
+
+/* Responsive */
+
+.responsive { display: none; }
+
+@media only screen and(max-width: 767px)  {
   .too-small  { display: inherit; }
   .too-small.inline  { display: inline; }
 
-
-
 }
 
-
-@media only screen and (min-width: 520px) and (max-width: 799px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
   .just-right { display: inherit; }
   .just-right.inline { display: inline; }
 
-
-
 }
 
-
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 959px) {
   .too-big    { display: inherit; }
   .too-big.inline    { display: inline; }
-
 
 }
 
