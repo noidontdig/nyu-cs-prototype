@@ -127,7 +127,6 @@
 /*  #Mobile (Portrait)
 ================================================== */
 
-    /* Note: Design for a width of 320px */
 
     @media only screen and (max-width: 767px) {
         .container { width: 300px; }
@@ -177,7 +176,6 @@
 /* #Mobile (Landscape)
 ================================================== */
 
-    /* Note: Design for a width of 480px */
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container { width: 420px; }
@@ -218,7 +216,6 @@
     .clearfix:after,
     .row:before,
     .row:after {
-      content: '\0020';
       display: block;
       overflow: hidden;
       visibility: hidden;

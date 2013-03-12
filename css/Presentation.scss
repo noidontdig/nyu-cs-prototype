@@ -4,21 +4,23 @@ $debug: false;
 @import "Constants";
 @import "Rhythm";
 @import "CSS";
-@import "Layout";
 
 /******************************************************/
 
 body {
   line-height: rhythm();
   @include debug-rhythm();
-  font-family: Verdana, Geneva, sans-serif;
+
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
 }
 
-$h1-font-size : 1.5 * $base-font-size;
-$h2-font-size : 1.25 * $base-font-size;
-$h3-font-size : 1 * $base-font-size;
-$h4-font-size : 0.9 * $base-font-size;
-$h5-font-size : 0.8 * $base-font-size;
+$h1-font-size : 2.0 * $base-font-size;
+$h2-font-size : 1.5 * $base-font-size;
+$h3-font-size : 1.25 * $base-font-size;
+$h4-font-size : 1 * $base-font-size;
+$h5-font-size : 0.9 * $base-font-size;
 $h6-font-size : 0.7 * $base-font-size;
 
 $tiny-font-size: 0.5 * $base-font-size;
@@ -73,6 +75,7 @@ p {
   @include v-margin(rhythm());
 }
 
+
 ul, ol, dl {
   @include v-margin(rhythm());
   padding-left: 0;
@@ -89,7 +92,6 @@ a {
     text-decoration: none;
   }
 }
-
 
 header, footer {
   width: 100%;
@@ -128,6 +130,24 @@ footer {
 }
 
 
+tr { text-align: left; }
+th { padding-right: 1em; }
+td { padding-right: 1em; }
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+
+}
+
+tr, th, td {
+  font-size: $h6-font-size;
+}
+
+ul { list-style-type: none; }
+
+
 /************************************/
 
 .down-arrow { font-size: $tiny-font-size; }
@@ -136,12 +156,13 @@ footer {
 .inline { display: inline; }
 .hero { 
   color: #444;
-  font-size: $h1-font-size;
-  line-height: rhythm(1, $h1-font-size / 2);
+  font-size: $h2-font-size;
+  line-height: rhythm(1, $h2-font-size / 2);
 }
 
 
 /************************************/
+
 
 
 .menu {
@@ -176,27 +197,15 @@ footer {
 }
 
 
-
-
-
 .events-wrapper {
   $dt-font-size: $base-font-size * 0.8;  
-  dt, dd {
-    font-size: $dt-font-size;
-  }
-
-  dt { 
-    @include v-margin(rhythm(1, $dt-font-size), 0);
-  }
+  dt, dd { font-size: $dt-font-size; }
+  dt { @include v-margin(rhythm(1, $dt-font-size), 0); }
   dd {
     @include v-margin(rhythm(0, $dt-font-size), 0);
     margin-left: 0; 
   }
-  
-  ul {
-    @include v-margin(0);
-    list-style-type: none;
-  }
+  ul { @include v-margin(0); }
 }
 
 
@@ -208,10 +217,7 @@ footer {
 
   dt {
     font-weight: bold;
-
-    &:after {
-      content: ". ";
-    }
+    &:after { content: ". "; }
   }
 
   dd:after{
@@ -221,6 +227,11 @@ footer {
 }
 
 
+.course-schedule-table {
+  font-size: $h6-font-size;
+  ul { margin: 0; padding: 0; }
+  li { display: inline-block; }
+}
 
 
 /* Responsive */
@@ -231,17 +242,79 @@ footer {
   .too-small  { display: inherit; }
   .too-small.inline  { display: inline; }
 
+  .container .course .column, 
+  .container .course .columns { width: auto; clear: both; }
+
+  .container .course .column.days,
+  .container .course .columns.days, { 
+    clear: left;
+    &:after { content: " |\00a0"; }
+  }
+
+  .container .course .column.time,
+  .container .course .columns.time, {
+    clear: none; 
+    &:after { content: " |\00a0"; }
+  }
+
+  .container .course .column.room,
+  .container .course .columns.room, { clear: right; }
+
+  .container .course .column.course-no,
+  .container .course .columns.course-no {
+    &:before { content: attr(data-title) ": "; }
+  }
+
+  .container .course .column.call-no,
+  .container .course .columns.call-no, { 
+    &:before { content: attr(data-title) ": "; }
+  }
+
+  .course-schedule-table {
+    font-size: $base-font-size;
+    li {
+      padding: rhythm() 0;
+      border-bottom: 1px solid $light;
+    }
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .just-right { display: inherit; }
   .just-right.inline { display: inline; }
 
+  .course-schedule-table {
+
+    .headings { 
+      border-top: 1px solid $dark;
+      border-bottom: 1px solid $dark;
+      margin-top: -2px; /* offset from borders */
+      margin-bottom: 0;
+      font-weight: bold; 
+      display: inline-block;
+      padding: 0;
+    }
+  }
+
 }
 
 @media only screen and (min-width: 959px) {
   .too-big    { display: inherit; }
   .too-big.inline    { display: inline; }
+
+  .course-schedule-table {
+    .headings { 
+      border-top: 1px solid $dark;
+      border-bottom: 1px solid $dark;
+      margin-top: -2px; /* offset from borders */
+      margin-bottom: 0;
+      font-weight: bold; 
+      display: inline-block;
+      padding: 0;
+    }
+  }
+
 
 }
 
