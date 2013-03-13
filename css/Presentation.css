@@ -320,7 +320,7 @@ ul {
   display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 500px) {
   header {
     position: relative;
   }
@@ -404,8 +404,12 @@ ul {
     padding: 1.5em 0;
     border-bottom: 1px solid #e1e1ff;
   }
+
+  .admissions-wrapper ul, .admissions-wrapper ol {
+    margin: 0;
+  }
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 500px) and (max-width: 959px) {
   header {
     position: relative;
   }

@@ -292,7 +292,7 @@ ul { list-style-type: none; }
 
 .responsive { display: none; }
 
-@media only screen and(max-width: 767px)  {
+@media only screen and(max-width: 500px)  {
   header { position: relative; }
 
   .too-small  { display: inherit; }
@@ -348,9 +348,15 @@ ul { list-style-type: none; }
     }
   }
 
+  .admissions-wrapper {
+    ul, ol {
+      margin: 0;
+    }
+  }
+
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 500px) and (max-width: 959px) {
   
   header { position: relative; }
 
