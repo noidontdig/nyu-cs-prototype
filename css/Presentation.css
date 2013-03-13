@@ -1,39 +1,48 @@
-.container {
-  max-width: 960px;
-  margin: 0 auto; }
-
-/****** should later be integrated into this file *****/
-.main-text {
-  background-color: grey; }
-
-.events ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style-type: none; }
-
 /******************************************************/
 body {
   line-height: 1.5em;
-  background-image: url("debug/rhythm24.gif"); }
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%; }
 
 h1 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  font-size: 32px; }
+
+h2 {
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 24px; }
 
-h2 {
+h3 {
   margin-top: 1.2em;
   margin-bottom: 1.2em;
   font-size: 20px; }
 
-h3 {
+h4 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   font-size: 16px; }
 
+h5 {
+  margin-top: 1.66667em;
+  margin-bottom: 1.66667em;
+  font-size: 14.4px; }
+
+h6 {
+  margin-top: 2.14286em;
+  margin-bottom: 2.14286em;
+  font-size: 11.2px; }
+
 h1, h2, h3 {
   margin-top: rhythm;
   margin-bottom: rhythm; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: normal; }
 
 h3.inline {
   display: run-in;
@@ -51,15 +60,17 @@ ul, ol, dl {
   margin-bottom: 1.5em;
   padding-left: 0; }
 
-/************************************/
-.down-arrow {
-  font-size: 8px; }
+a {
+  color: #3e79ee;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 1px; }
+  a:hover {
+    color: #2053b9;
+    text-decoration: none; }
 
-/************************************/
-/* $main-nav-height: 100px; */
 header, footer {
-  width: 100%;
-  background-color: #ccc; }
+  width: 100%; }
   header ul, footer ul {
     margin: 0; }
   header ul li, footer ul li {
@@ -68,16 +79,198 @@ header, footer {
     margin-bottom: 1.5em; }
 
 footer {
-  height: 9em; }
-
-.menu {
-  height: 4.5em;
-  background-color: blue; }
-  .menu nav {
+  border-top: 1px solid #efefef;
+  margin-top: -1px;
+  /* to offset border-top */
+  height: 9em;
+  /* Had to add this to clear .event-wrapper. Remove with caution */
+  clear: both; }
+  footer ul {
     float: right; }
+  footer ul li:after {
+    color: #999999;
+    content: "  \00b7  "; }
+  footer ul li:last-child:after {
+    content: ""; }
+  footer ul li:last-child:before {
+    content: "  "; }
+  footer a {
+    font-weight: normal;
+    font-size: smaller;
+    color: #999999; }
+    footer a:hover {
+      color: #777777; }
+
+tr {
+  text-align: left; }
+
+th {
+  padding-right: 1em; }
+
+td {
+  padding-right: 1em; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+tr, th, td {
+  font-size: 11.2px; }
+
+ul {
+  list-style-type: none; }
+
+/************************************/
+.down-arrow {
+  font-size: 8px; }
+
+.inline {
+  display: inline; }
+
+.hero {
+  color: #444;
+  font-size: 24px;
+  line-height: 2em; }
+
+/************************************/
+.menu {
+  height: 4.5em; }
+  .menu .logo-wrapper {
+    width: 140px;
+    background-color: purple;
+    height: 100%;
+    float: left; }
+  .menu .menu-nav-list {
+    float: right; }
+    .menu .menu-nav-list a {
+      float: left;
+      padding: 1.5em; }
+
+.menu-nav-list li {
+  display: none; }
 
 .submenu {
-  height: 3em;
-  background-color: orange; }
+  height: 1.5em;
+  margin-top: -2px;
+  /* to offset the border effect */
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef; }
   .submenu nav {
     float: left; }
+
+.events-wrapper dt, .events-wrapper dd {
+  font-size: 12.8px; }
+.events-wrapper dt {
+  margin-top: 1.875em;
+  margin-bottom: 0; }
+.events-wrapper dd {
+  margin-top: 0em;
+  margin-bottom: 0;
+  margin-left: 0; }
+.events-wrapper ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.news-wrapper {
+  border-top: 1px solid #0e7d8e;
+  margin-top: -1px;
+  /* to offset border-top */ }
+  .news-wrapper dt, .news-wrapper dd {
+    display: inline;
+    margin: 0; }
+  .news-wrapper dt {
+    font-weight: bold; }
+    .news-wrapper dt:after {
+      content: ". "; }
+  .news-wrapper dd:after {
+    content: "\A\A";
+    white-space: pre; }
+
+.course-schedule-table {
+  font-size: 11.2px; }
+  .course-schedule-table ul {
+    margin: 0;
+    padding: 0; }
+  .course-schedule-table li {
+    display: inline-block; }
+
+/* Responsive */
+.responsive {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .too-small {
+    display: inherit; }
+
+  .too-small.inline {
+    display: inline; }
+
+  .container .course .column,
+  .container .course .columns {
+    width: auto;
+    clear: both; }
+
+  .container .course .column.days,
+  .container .course .columns.days {
+    clear: left; }
+    .container .course .column.days:after,
+    .container .course .columns.days:after {
+      content: " |\00a0"; }
+
+  .container .course .column.time,
+  .container .course .columns.time {
+    clear: none; }
+    .container .course .column.time:after,
+    .container .course .columns.time:after {
+      content: " |\00a0"; }
+
+  .container .course .column.room,
+  .container .course .columns.room {
+    clear: right; }
+
+  .container .course .column.course-no:before,
+  .container .course .columns.course-no:before {
+    content: attr(data-title) ": "; }
+
+  .container .course .column.call-no:before,
+  .container .course .columns.call-no:before {
+    content: attr(data-title) ": "; }
+
+  .course-schedule-table {
+    font-size: 16px; }
+    .course-schedule-table li {
+      padding: 1.5em 0;
+      border-bottom: 1px solid #e1e1ff; } }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .just-right {
+    display: inherit; }
+
+  .just-right.inline {
+    display: inline; }
+
+  .course-schedule-table .headings {
+    border-top: 1px solid #282880;
+    border-bottom: 1px solid #282880;
+    margin-top: -2px;
+    /* offset from borders */
+    margin-bottom: 0;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0; } }
+@media only screen and (min-width: 959px) {
+  .too-big {
+    display: inherit; }
+
+  .too-big.inline {
+    display: inline; }
+
+  .course-schedule-table .headings {
+    border-top: 1px solid #282880;
+    border-bottom: 1px solid #282880;
+    margin-top: -2px;
+    /* offset from borders */
+    margin-bottom: 0;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0; } }

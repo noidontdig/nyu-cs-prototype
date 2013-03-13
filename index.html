@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/Presentation.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -32,188 +33,205 @@
                 <span>NYU Computer Science</span>
               </div>
 
-              <nav>
-                <ul>
-                  <li><a href="">Academics</a></li>
-                  <li><a href="">Admissions</a></li>
-                  <li><a href="">People</a></li>
-                  <li><a href="">Research</a></li>
-                  <li><a href="">News &amp; Events</a></li>
-                  <li class="hidden"><a href="">More <span class="down-arrow">&#x25BC;</span></a></li>
+              <nav class="menu-nav">
+                <ul class="menu-nav-list">
+                  <li class="too-big just-right inline"><a href="">Academics</a></li>
+                  <li class="too-big just-right inline"><a href="">Admissions</a></li>
+                  <li class="too-big inline"><a href="">People</a></li>
+                  <li class="too-big inline"><a href="">Research</a></li>
+                  <li class="too-big inline"><a href="">News &amp; Events</a></li>
+                  <li class="just-right inline"><a href="">More <span class="down-arrow">&#x25BC;</span></a>
+                    <ul class="dropdown">
+                      <li class="too-small "><a href="">Admissions</a></li>
+                      <li class="too-small just-right"><a href="">People</a></li>
+                      <li class="too-small just-right "><a href="">Research</a></li>
+                      <li class="too-small just-right "><a href="">News &amp; Events</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </nav>
             </div>
+          </div><!-- .container ->
 
             <!-- generated based on location in site -->
-            <div class="submenu">
+          <div class="submenu">
+            <div class="container">
               <nav>
                 <ul>
-                  <li><a href="">Graduate Requirements</a></li>
+                  <!-- <li><a href="">Graduate Requirements</a></li>
                   <li><a href="">Undergraduate Requirements</a></li>
                   <li><a href="">Blah</a></li>
                   <li><a href="">Resh</a></li>
-                  <li><a href="">Neents</a></li>
+                  <li><a href="">Neents</a></li> -->
                 </ul>
               </nav>
-            </div><!-- .submenu -->
+            </div>
+          </div><!-- .submenu -->
 
-          </div>
         </header>
         
         <div class="content">
           <div class="container">
-	    <div class="main-text">
 
-              <h1>Welcome</h1>
-              <p>Welcome to NYU's Computer Science Department, part of the world-famous Courant Institute of Mathematical Sciences. Our department has considerably expanded over the past few years, adding many outstanding faculty with diverse research interests. We are proud of our strong research and educational connections to other departments and schools at NYU, including the departments of Mathematics, Chemistry, Physics, and Biology; the Center for Neural Science; the Stern School of Business; the Tisch School of the Arts; the Wagner School of Public Service; and the NYU School of Medicine.</p>
-              <p>Our undergraduate majors and MS students have numerous interesting and well-paying employment opportunities at major corporations in New York City and vicinity. Our PhD graduates are employed in a broad spectrum of academic and industrial research positions.</p>
-	    </div>  <!-- end .main-text -->
+            <div class="row">
+              <div class="twelve columns">
+                <!-- Main Text -->
+                <div class="main-text">
+                  <h2 class="hero">Computer science continues to transform every part of our lives. <span class="responsive just-right too-big inline">Active in the world-famous Courant Institute of Mathematical Sciences, our students and faculty go on to change the world through their research, employment, or entrepreneurial endeavors.</span><span class="responsive too-small inline">Our students and faculty take part in that.</span></h2>
 
-            <dl class="events">
+                  <p>We're also proud of our strong connections to numerous departments and schools at NYU<span class="responsive just-right too-big inline">, including the departments of Mathematics, Chemistry, Physics, and Biology; the Center for Neural Science; the Stern School of Business; the Tisch School of the Arts; the Wagner School of Public Service; and the NYU School of Medicine</span>.</p>
+                </div>  <!-- end .main-text -->
 
-              <dt class="title">
-                <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/144">Interacting with Small Devices in Big Ways</a>
-              </dt>
-              <dd class="description">
-                <ul>
-                  <li class="speaker">Chris Harrison</li>
-                  <li class="date">March 11, 2013</li>
-                  <li class="location">11:30 AM Warren Weaver Hall 1302</li>
-                </ul>
-              </dd>
-              
-              <dt class="title">
-                <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/145">Adding a Human Touch to Personalized Digital Learning </a>
-              </dt>
-              <dd class="description">
-                <ul>
-                  <li class="speaker">Amy Ogan</li>
-                  <li class="date">March 13, 2013</li>
-                  <li class="location">11:30 AM Warren Weaver Hall 1302</li>
-                </ul>
-              </dd>
-              
-              <dt class="title">
-                <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/150">TBA 3-15</a>
-              </dt>
-              <dd class="description">
-                <ul>
-                  <li class="speaker">Nando de Freitas</li>
-                  <li class="date">March 15, 2013 </li>
-                  <li class="location">11:30 AM Warren Weaver Hall 1302</li>
-                </ul>
-              </dd>
+                <!-- News ------>
+                <div class="news-wrapper">
+                  <h2>Highlights</h2>
+                  <dl class="news">
+                    <dt class="title">NYUAD Hackathon</dt>
+                    <dd class="description">
+                      The NYUAD International Hackathon for Social Good in the Arab World took place on Feb. 21-25. More than 80 students from 16 countries participated. The Hackathon was founded and is organized by Prof. Sana' Odeh. Congratulations to all involved! <a href="http://nyuad.nyu.edu/hackathon/">Link</a>&nbsp; <a href="http://www.khaleejtimes.com/nation/inside.asp?xfile=%2Fdata%2Fnationgeneral…F2013%2FFebruary%2Fnationgeneral_February467.xml&amp;section=nationgeneral">News Story</a>
+                    </dd>
 
-              <dt class="title">
-                <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/145">Adding a Human Touch to Personalized Digital Learning</a>
-              </dt>
-              <dd class="description">
-                <ul>
-                  <li class="speaker">Amy Ogan</li>
-                  <li class="date">March 13, 2013</li>
-                  <li class="location">11:30 AM Warren Weaver Hall 1302</li>
-                </ul>
-              </dd>
+                    <dt class="title">Center for Data Science</dt>
+                    <dd class="description">
+                      NYU has announced the launching of an initiative in Data Science and Statistics. The university-wide effort includes the creation of the Center for Data Science, the first such program in the United States. Prof. Yann LeCun is Director of the Center. The Center will have a masters degree program, accepting students for the fall of 2013, and plans to have a doctoral program starting at a later date. <a href="http://cds.nyu.edu">Link</a>
+                    </dd>
 
-              <dt class="title">
-                <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/150">TBA 3-15</a>
-              </dt>
-              <dd class="description">
-                <ul>
-                  <li class="speaker">Nando de Freitas</li>
-                  <li class="date">March 15, 2013</li>
-                  <li class="location">11:30 AM Warren Weaver Hall 1302</li>
-                </ul>
-              </dd>
+                    <dt class="title">Motion Capture in 2012</dt>
+                    <dd class="description">
+                      A New York Times retrospective on graphics in 2012 features four projects from Chris Bregler's Motion Capture Lab:&nbsp;"Olympics Diving", "Olympics One with the Water", "What Romney and Obama's Body Language Says to Voters", and "Connecting Music and Gesture (The Maestro's Mojo, Alan Gilbert and the NY Philharmonics)". <a href="http://www.nytimes.com/interactive/2012/12/30/multimedia/2012-the-year-in-graphics.html">Link</a>
+                    </dd>
 
-              <dt class="title">
-                <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/147">TBA 3-29</a>
-              </dt>
-              <dd class="description">
-                <ul>
-                  <li class="speaker">Siddhartha Sen</li>
-                  <li class="date">March 29, 2013</li>
-                  <li class="location">11:30 AM Warren Weaver Hall 1302</li>
-                </ul>
-              </dd>
+                    <dt class="title">Labelling artworks</dt>
+                    <dd class="description">
+                      The Entrupy system, developed by Lakshmi Subramanian and Ashlesh Sharma, for labelling works of art against counterfeiting, is featured in Forbes magazine as one of "Four Disruptive Technologies to Watch in 2013". <a href="http://www.forbes.com/sites/gyro/2012/12/31/four-disruptive-technologies-marketers-should-consider-now/">Link</a>
+                    </dd>
 
-              <dt class="title">
-                <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/148">TBA 4-8</a>
-              </dt>
-              <dd class="description">
-                <ul>
-                  <li class="speaker">Etienne Vouga</li>
-                  <li class="date">April 08, 2013</li>
-                  <li class="location">11:30 AM Warren Weaver Hall 1302</li>
-                </ul>
-              </dd>
+                    <dt class="title">Movement Lab partners with Digitas</dt>
+                    <dd class="description">
+                      The Movement Lab and Digitas have announced a partnership program to co-create 3D Motion Capture Brand Experiences. <a href="http://www.nyu.edu/about/news-publications/news/2012/12/20/nyus-movement-lab-digitas-announce-partnership-program-to-co-create-3d-motion-capture-brand-experiences.html">Link</a>
+                    </dd>
 
-              <dt class="title">
-                <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/149">TBA 3-19</a>
-              </dt>
-              <dd class="description">
-                <ul>
-                  <li class="speaker">Michael Walfish</li>
-                  <li class="date">April 19, 2013 </li>
-                  <li class="location">11:30 AM Warren Weaver Hall 1302</li>
-                </ul>
-              </dd>
+                    <dt class="title">Fellows of IEEE and ACM</dt>
+                    <dd class="description">
+                      Claudio Silva has been named a fellow of IEEE and Keith Ross has been named a fellow of ACM. Claudio and Keith are affiliated faculty members and professors at NYU-Poly. Links: <a href="http://phys.org/wire-news/116603632/claudio-silva-named-a-fellow-of-the-ieee.html">Claudio</a> and <a href="http://phys.org/wire-news/116696744/nyu-poly-professor-named-a-fellow-of-the-acm.html">Keith</a>
+                    </dd>
 
-            </dl>
+                  </dl>
 
-	    <p>Check the <a href="/colloquia">Colloquia</a> for more scheduled talks.</p>
-	    <p>Check the <a href="http://www.cims.nyu.edu/bulletin/">CIMS Weekly Bulletin</a> for more events.</p>
+                  <p><a href="/webapps/feed/news">More News &rarr;</a></p>
+                </div> <!-- end .news-wrapper -->
+
+
+              </div>
+
+              <div class="four columns">
+                <div class="events-wrapper">
+                  <h2>Events</h2>
+                  <dl class="events">
+
+                    <dt class="title">
+                      <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/144">Interacting with Small Devices in Big Ways</a>
+                    </dt>
+                    <dd class="description">
+                      <ul>
+                        <li class="speaker">Chris Harrison</li>
+                        <li class="date">March 11, 2013</li>
+                        <li class="location">11:30 AM Warren Weaver Hall 1302</li>
+                      </ul>
+                    </dd>
             
-	    <!-- News ------>
+                    <dt class="title">
+                      <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/145">Adding a Human Touch to Personalized Digital Learning </a>
+                    </dt>
+                    <dd class="description">
+                      <ul>
+                        <li class="speaker">Amy Ogan</li>
+                        <li class="date">March 13, 2013</li>
+                        <li class="location">11:30 AM Warren Weaver Hall 1302</li>
+                      </ul>
+                    </dd>
+            
+                    <dt class="title">
+                      <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/150">TBA 3-15</a>
+                    </dt>
+                    <dd class="description">
+                      <ul>
+                        <li class="speaker">Nando de Freitas</li>
+                        <li class="date">March 15, 2013 </li>
+                        <li class="location">11:30 AM Warren Weaver Hall 1302</li>
+                      </ul>
+                    </dd>
 
-            <dl class="news">
+                    <dt class="title">
+                      <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/145">Adding a Human Touch to Personalized Digital Learning</a>
+                    </dt>
+                    <dd class="description">
+                      <ul>
+                        <li class="speaker">Amy Ogan</li>
+                        <li class="date">March 13, 2013</li>
+                        <li class="location">11:30 AM Warren Weaver Hall 1302</li>
+                      </ul>
+                    </dd>
 
-              <dt class="title">NYUAD Hackathon</dt>
-              <dd class="description">
-		The NYUAD International Hackathon for Social Good in the Arab World took place on Feb. 21-25. More than 80 students from 16 countries participated. The Hackathon was founded and is organized by Prof. Sana' Odeh. Congratulations to all involved! <a href="http://nyuad.nyu.edu/hackathon/">Link</a>&nbsp; <a href="http://www.khaleejtimes.com/nation/inside.asp?xfile=%2Fdata%2Fnationgeneral…F2013%2FFebruary%2Fnationgeneral_February467.xml&amp;section=nationgeneral">News Story</a>
-              </dd>
+                    <dt class="title">
+                      <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/150">TBA 3-15</a>
+                    </dt>
+                    <dd class="description">
+                      <ul>
+                        <li class="speaker">Nando de Freitas</li>
+                        <li class="date">March 15, 2013</li>
+                        <li class="location">11:30 AM Warren Weaver Hall 1302</li>
+                      </ul>
+                    </dd>
 
-              <dt class="title">Center for Data Science</dt>
-              <dd class="description">
-		NYU has announced the launching of an initiative in Data Science and Statistics. The university-wide effort includes the creation of the Center for Data Science, the first such program in the United States. Prof. Yann LeCun is Director of the Center. The Center will have a masters degree program, accepting students for the fall of 2013, and plans to have a doctoral program starting at a later date. <a href="http://cds.nyu.edu">Link</a>
-              </dd>
+                    <dt class="title">
+                      <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/147">TBA 3-29</a>
+                    </dt>
+                    <dd class="description">
+                      <ul>
+                        <li class="speaker">Siddhartha Sen</li>
+                        <li class="date">March 29, 2013</li>
+                        <li class="location">11:30 AM Warren Weaver Hall 1302</li>
+                      </ul>
+                    </dd>
 
-              <dt class="title">Motion Capture in 2012</dt>
-              <dd class="description">
-		A New York Times retrospective on graphics in 2012 features four projects from Chris Bregler's Motion Capture Lab:&nbsp;"Olympics Diving", "Olympics One with the Water", "What Romney and Obama's Body Language Says to Voters", and "Connecting Music and Gesture (The Maestro's Mojo, Alan Gilbert and the NY Philharmonics)". <a href="http://www.nytimes.com/interactive/2012/12/30/multimedia/2012-the-year-in-graphics.html">Link</a>
-              </dd>
+                    <dt class="title">
+                      <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/148">TBA 4-8</a>
+                    </dt>
+                    <dd class="description">
+                      <ul>
+                        <li class="speaker">Etienne Vouga</li>
+                        <li class="date">April 08, 2013</li>
+                        <li class="location">11:30 AM Warren Weaver Hall 1302</li>
+                      </ul>
+                    </dd>
 
-              <dt class="title">Labelling artworks</dt>
-              <dd class="description">
-		The Entrupy system, developed by Lakshmi Subramanian and Ashlesh Sharma, for labelling works of art against counterfeiting, is featured in Forbes magazine as one of "Four Disruptive Technologies to Watch in 2013". <a href="http://www.forbes.com/sites/gyro/2012/12/31/four-disruptive-technologies-marketers-should-consider-now/">Link</a>
-              </dd>
+                    <dt class="title">
+                      <a class="event-link" href="http://cs.nyu.edu/webapps/spring2013/colloquia/149">TBA 3-19</a>
+                    </dt>
+                    <dd class="description">
+                      <ul>
+                        <li class="speaker">Michael Walfish</li>
+                        <li class="date">April 19, 2013 </li>
+                        <li class="location">11:30 AM Warren Weaver Hall 1302</li>
+                      </ul>
+                    </dd>
+                  </dl>
 
-              <dt class="title">Movement Lab partners with Digitas</dt>
-              <dd class="description">
-		The Movement Lab and Digitas have announced a partnership program to co-create 3D Motion Capture Brand Experiences. <a href="http://www.nyu.edu/about/news-publications/news/2012/12/20/nyus-movement-lab-digitas-announce-partnership-program-to-co-create-3d-motion-capture-brand-experiences.html">Link</a>
-              </dd>
+                  <p>Check the <a href="/colloquia">Colloquia</a> for more scheduled talks.</p>
+                  <p>Check the <a href="http://www.cims.nyu.edu/bulletin/">CIMS Weekly Bulletin</a> for more events.</p>
 
-              <dt class="title">Fellows of IEEE and ACM</dt>
-              <dd class="description">
-		Claudio Silva has been named a fellow of IEEE and Keith Ross has been named a fellow of ACM. Claudio and Keith are affiliated faculty members and professors at NYU-Poly. Links: <a href="http://phys.org/wire-news/116603632/claudio-silva-named-a-fellow-of-the-ieee.html">Claudio</a> and <a href="http://phys.org/wire-news/116696744/nyu-poly-professor-named-a-fellow-of-the-acm.html">Keith</a>
-              </dd>
-
-            </dl>
-	    <p><a href="/webapps/feed/news">&lt;&lt;More News&gt;&gt;</a></p>
-	    <!-- end news -->
-
-            <dl class="highlights">
-              <!-- Highlights? -->
-            </dl> 
-
-          </div>
+                </div>  <!-- end of .events-wrapper -->
+              </div>
+            </div><!-- .row -->
+          </div><!-- .container -->
         </div>  
 
         <footer class="footer">
           <div class="container">
             <nav>
               <ul>
-                <li><a href="">About</a></li>
+                <li><a href="">About NYU CS</a></li>
                 <li><a href="">Jobs</a></li>
                 <li><a href="">Student Organizations</a></li>
                 <li><a href="">Resources</a>
@@ -224,7 +242,7 @@
         </footer> 
       </div>
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>
