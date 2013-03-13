@@ -1,6 +1,7 @@
 /******************************************************/
 body {
   line-height: 1.5em;
+  background-image: url("debug/rhythm24.gif");
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -248,9 +249,24 @@ ul {
   display: inline-block;
 }
 
+.course-schedule-table li {
+  margin: 0;
+  padding: 0;
+}
+.course-schedule-table .row {
+  margin-top: -5px;
+  padding: 0;
+}
 .course-schedule-table .description {
   max-height: 4.5em;
   overflow: hidden;
+}
+.course-schedule-table .close-more {
+  display: none;
+}
+.course-schedule-table .column, .course-schedule-table .columns {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .admissions-wrapper dt {
@@ -338,6 +354,23 @@ ul {
   .container .course .column.call-no:before,
   .container .course .columns.call-no:before {
     content: attr(data-title) ": ";
+  }
+
+  .row li {
+    max-height: inherit;
+    height: inherit;
+  }
+  .row .description {
+    max-height: inherit;
+    height: inherit;
+    overflow: hidden;
+  }
+
+  .description .read-more {
+    display: none;
+  }
+  .description .close-more {
+    display: none;
   }
 
   .course-schedule-table, .admissions-table {

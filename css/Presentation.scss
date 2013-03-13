@@ -1,5 +1,5 @@
 
-$debug: false;
+$debug: true;
 
 @import "Constants";
 @import "Rhythm";
@@ -233,7 +233,11 @@ ul { list-style-type: none; }
 }
 
 .course-schedule-table {
+  li { margin: 0; padding: 0;}
+  .row { margin-top: -5px; padding: 0;}
   .description { max-height: rhythm(3); overflow: hidden;}
+  .close-more { display: none; }
+  .column, .columns { @include v-margin(0); }
 }
 
 .admissions-wrapper {
@@ -306,6 +310,16 @@ ul { list-style-type: none; }
   .container .course .column.call-no,
   .container .course .columns.call-no, { 
     &:before { content: attr(data-title) ": "; }
+  }
+  
+  .row {
+    li { max-height: inherit; height: inherit;}
+    .description { max-height: inherit; height: inherit; overflow: hidden;}
+  }
+  
+  .description {
+    .read-more { display: none; }
+    .close-more { display: none; }
   }
 
   .course-schedule-table, .admissions-table {
