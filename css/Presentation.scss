@@ -226,7 +226,7 @@ ul { list-style-type: none; }
   }
 }
 
-.course-schedule-table {
+.course-schedule-table, .admissions-table {
   font-size: $h6-font-size;
   ul { margin: 0; padding: 0; }
   li { display: inline-block; }
@@ -236,46 +236,34 @@ ul { list-style-type: none; }
   $list-margin: 50px;
   $sub-list-margin: 20px;
   $dt-font-size: $base-font-size * 0.8;
-
-  dt, dd {
-    font-size: $dt-font-size;
-  }
   dt {
     font-weight: bold; 
-    @include v-margin(rhythm(1, $dt-font-size), 0);
   }
   dd {
-    @include v-margin(rhythm(0, $dt-font-size), 0);
-    margin-left: 0; 
+    margin-left: 20px; 
   }  
-  .six.columns:after {
+  .seven.columns:after {
     content: "\A\A";
     white-space: pre;  
-  }
-  .section {
+  } 
+  section {
     clear: both;
     display: block;
   } 
   ul {
     @include v-margin(0);
-    // list-style-type: none;
+    list-style-type: square;
     margin-left: $list-margin;
   }
   ol {
     margin-left: $list-margin;
   }
-  ol.msis-qualifications {
-    li {
-      ul {
-        margin-left: $sub-list-margin;
-        li:before {
-          // content: "- "
-        }
-      }
-    }
-  }
   .category {
     font-weight: bold;
+  }
+  .admissions-table {
+    ul { margin-left: 0; padding: 0; }
+    li { display: inline-block; }
   }
 }
 
@@ -316,7 +304,7 @@ ul { list-style-type: none; }
     &:before { content: attr(data-title) ": "; }
   }
 
-  .course-schedule-table {
+  .course-schedule-table, .admissions-table {
     font-size: $base-font-size;
     li {
       padding: rhythm() 0;
@@ -330,7 +318,7 @@ ul { list-style-type: none; }
   .just-right { display: inherit; }
   .just-right.inline { display: inline; }
 
-  .course-schedule-table {
+  .course-schedule-table, admissions-table {
 
     .headings { 
       border-top: 1px solid $dark;
@@ -349,7 +337,7 @@ ul { list-style-type: none; }
   .too-big    { display: inherit; }
   .too-big.inline    { display: inline; }
 
-  .course-schedule-table {
+  .course-schedule-table, .admissions-table {
     .headings { 
       border-top: 1px solid $dark;
       border-bottom: 1px solid $dark;
