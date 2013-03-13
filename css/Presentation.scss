@@ -403,7 +403,9 @@ ul { list-style-type: none; }
   .show-menu { display: hidden; }
   .show-more { display: inline; }
 
-
+  .events-wrapper {
+    float: none;
+  }
 }
 
 @media only screen and (min-width: 959px) {
