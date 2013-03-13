@@ -1,4 +1,4 @@
-
+  
 $debug: true;
 
 @import "Constants";
@@ -91,6 +91,13 @@ a {
     color: rgb(32, 83, 185);
     text-decoration: none;
   }
+}
+
+
+header {
+  position: fixed;
+  background: #fff;
+  z-index: 1000;
 }
 
 header, footer {
@@ -281,6 +288,8 @@ ul { list-style-type: none; }
 .responsive { display: none; }
 
 @media only screen and(max-width: 767px)  {
+  header { position: relative; }
+
   .too-small  { display: inherit; }
   .too-small.inline  { display: inline; }
 
@@ -333,6 +342,9 @@ ul { list-style-type: none; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+  header { position: relative; }
+
   .just-right { display: inherit; }
   .just-right.inline { display: inline; }
 
@@ -352,6 +364,9 @@ ul { list-style-type: none; }
 }
 
 @media only screen and (min-width: 959px) {
+  header { position: fixed; }
+  .content { padding-top: 6em; }
+
   .too-big    { display: inherit; }
   .too-big.inline    { display: inline; }
 
