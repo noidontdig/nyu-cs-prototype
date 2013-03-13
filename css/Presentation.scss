@@ -240,9 +240,9 @@ ul { list-style-type: none; }
     font-weight: bold; 
   }
   dd {
-    margin-left: 20px; 
+    margin-left: 0; 
   }  
-  .seven.columns:after {
+  .five.columns:after {
     content: "\A\A";
     white-space: pre;  
   } 

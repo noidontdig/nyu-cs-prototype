@@ -252,9 +252,9 @@ ul {
   font-weight: bold;
 }
 .admissions-wrapper dd {
-  margin-left: 20px;
+  margin-left: 0;
 }
-.admissions-wrapper .seven.columns:after {
+.admissions-wrapper .five.columns:after {
   content: "\A\A";
   white-space: pre;
 }
