@@ -4,79 +4,97 @@ body {
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+}
 
 h1 {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
-  font-size: 32px; }
+  font-size: 32px;
+}
 
 h2 {
   margin-top: 1em;
   margin-bottom: 1em;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
 h3 {
   margin-top: 1.2em;
   margin-bottom: 1.2em;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 h4 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 h5 {
-  margin-top: 1.66667em;
-  margin-bottom: 1.66667em;
-  font-size: 14.4px; }
+  margin-top: 1.6667em;
+  margin-bottom: 1.6667em;
+  font-size: 14.4px;
+}
 
 h6 {
-  margin-top: 2.14286em;
-  margin-bottom: 2.14286em;
-  font-size: 11.2px; }
+  margin-top: 2.1429em;
+  margin-bottom: 2.1429em;
+  font-size: 11.2px;
+}
 
 h1, h2, h3 {
   margin-top: rhythm;
-  margin-bottom: rhythm; }
+  margin-bottom: rhythm;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 h3.inline {
   display: run-in;
-  font-size: 1em; }
-  h3.inline:after {
-    content: ". ";
-    font-weight: normal; }
+  font-size: 1em;
+}
+h3.inline:after {
+  content: ". ";
+  font-weight: normal;
+}
 
 p {
   margin-top: 1.5em;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+}
 
 ul, ol, dl {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  padding-left: 0; }
+  padding-left: 0;
+}
 
 a {
   color: #3e79ee;
   font-weight: bold;
   text-decoration: none;
-  padding: 0 1px; }
-  a:hover {
-    color: #2053b9;
-    text-decoration: none; }
+  padding: 0 1px;
+}
+a:hover {
+  color: #2053b9;
+  text-decoration: none;
+}
 
 header, footer {
-  width: 100%; }
-  header ul, footer ul {
-    margin: 0; }
-  header ul li, footer ul li {
-    display: inline;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em; }
+  width: 100%;
+}
+header ul, footer ul {
+  margin: 0;
+}
+header ul li, footer ul li {
+  display: inline;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
 
 footer {
   border-top: 1px solid #efefef;
@@ -84,170 +102,221 @@ footer {
   /* to offset border-top */
   height: 9em;
   /* Had to add this to clear .event-wrapper. Remove with caution */
-  clear: both; }
-  footer ul {
-    float: right; }
-  footer ul li:after {
-    color: #999999;
-    content: "  \00b7  "; }
-  footer ul li:last-child:after {
-    content: ""; }
-  footer ul li:last-child:before {
-    content: "  "; }
-  footer a {
-    font-weight: normal;
-    font-size: smaller;
-    color: #999999; }
-    footer a:hover {
-      color: #777777; }
+  clear: both;
+}
+footer ul {
+  float: right;
+}
+footer ul li:after {
+  color: #999999;
+  content: " \00b7 ";
+}
+footer ul li:last-child:after {
+  content: "";
+}
+footer ul li:last-child:before {
+  content: " ";
+}
+footer a {
+  font-weight: normal;
+  font-size: smaller;
+  color: #999999;
+}
+footer a:hover {
+  color: #777777;
+}
 
 tr {
-  text-align: left; }
+  text-align: left;
+}
 
 th {
-  padding-right: 1em; }
+  padding-right: 1em;
+}
 
 td {
-  padding-right: 1em; }
+  padding-right: 1em;
+}
 
 table {
   width: 100%;
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 tr, th, td {
-  font-size: 11.2px; }
+  font-size: 11.2px;
+}
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 /************************************/
 .down-arrow {
-  font-size: 8px; }
+  font-size: 8px;
+}
 
 .inline {
-  display: inline; }
+  display: inline;
+}
 
 .hero {
   color: #444;
   font-size: 24px;
-  line-height: 2em; }
+  line-height: 2em;
+}
 
 /************************************/
 .menu {
-  height: 4.5em; }
-  .menu .logo-wrapper {
-    width: 140px;
-    background-color: purple;
-    height: 100%;
-    float: left; }
-  .menu .menu-nav-list {
-    float: right; }
-    .menu .menu-nav-list a {
-      float: left;
-      padding: 1.5em; }
+  height: 4.5em;
+}
+.menu .logo-wrapper {
+  width: 189px;
+  background: url("../img/cs_logo1.png");
+  height: 100%;
+  float: left;
+}
+.menu .menu-nav-list {
+  float: right;
+}
+.menu .menu-nav-list a {
+  float: left;
+  padding: 1.5em;
+}
 
 .menu-nav-list li {
-  display: none; }
+  display: none;
+}
 
 .submenu {
   height: 1.5em;
   margin-top: -2px;
   /* to offset the border effect */
   border-top: 1px solid #efefef;
-  border-bottom: 1px solid #efefef; }
-  .submenu nav {
-    float: left; }
+  border-bottom: 1px solid #efefef;
+}
+.submenu nav {
+  float: left;
+}
 
 .events-wrapper dt, .events-wrapper dd {
-  font-size: 12.8px; }
+  font-size: 12.8px;
+}
 .events-wrapper dt {
   margin-top: 1.875em;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 .events-wrapper dd {
   margin-top: 0em;
   margin-bottom: 0;
-  margin-left: 0; }
+  margin-left: 0;
+}
 .events-wrapper ul {
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .news-wrapper {
   border-top: 1px solid #0e7d8e;
   margin-top: -1px;
-  /* to offset border-top */ }
-  .news-wrapper dt, .news-wrapper dd {
-    display: inline;
-    margin: 0; }
-  .news-wrapper dt {
-    font-weight: bold; }
-    .news-wrapper dt:after {
-      content: ". "; }
-  .news-wrapper dd:after {
-    content: "\A\A";
-    white-space: pre; }
+  /* to offset border-top */
+}
+.news-wrapper dt, .news-wrapper dd {
+  display: inline;
+  margin: 0;
+}
+.news-wrapper dt {
+  font-weight: bold;
+}
+.news-wrapper dt:after {
+  content: ". ";
+}
+.news-wrapper dd:after {
+  content: "\A\A";
+  white-space: pre;
+}
 
 .course-schedule-table {
-  font-size: 11.2px; }
-  .course-schedule-table ul {
-    margin: 0;
-    padding: 0; }
-  .course-schedule-table li {
-    display: inline-block; }
+  font-size: 11.2px;
+}
+.course-schedule-table ul {
+  margin: 0;
+  padding: 0;
+}
+.course-schedule-table li {
+  display: inline-block;
+}
 
 /* Responsive */
 .responsive {
-  display: none; }
+  display: none;
+}
 
 @media only screen and (max-width: 767px) {
   .too-small {
-    display: inherit; }
+    display: inherit;
+  }
 
   .too-small.inline {
-    display: inline; }
+    display: inline;
+  }
 
   .container .course .column,
   .container .course .columns {
     width: auto;
-    clear: both; }
+    clear: both;
+  }
 
   .container .course .column.days,
   .container .course .columns.days {
-    clear: left; }
-    .container .course .column.days:after,
-    .container .course .columns.days:after {
-      content: " |\00a0"; }
+    clear: left;
+  }
+  .container .course .column.days:after,
+  .container .course .columns.days:after {
+    content: " |\00a0";
+  }
 
   .container .course .column.time,
   .container .course .columns.time {
-    clear: none; }
-    .container .course .column.time:after,
-    .container .course .columns.time:after {
-      content: " |\00a0"; }
+    clear: none;
+  }
+  .container .course .column.time:after,
+  .container .course .columns.time:after {
+    content: " |\00a0";
+  }
 
   .container .course .column.room,
   .container .course .columns.room {
-    clear: right; }
+    clear: right;
+  }
 
   .container .course .column.course-no:before,
   .container .course .columns.course-no:before {
-    content: attr(data-title) ": "; }
+    content: attr(data-title) ": ";
+  }
 
   .container .course .column.call-no:before,
   .container .course .columns.call-no:before {
-    content: attr(data-title) ": "; }
+    content: attr(data-title) ": ";
+  }
 
   .course-schedule-table {
-    font-size: 16px; }
-    .course-schedule-table li {
-      padding: 1.5em 0;
-      border-bottom: 1px solid #e1e1ff; } }
+    font-size: 16px;
+  }
+  .course-schedule-table li {
+    padding: 1.5em 0;
+    border-bottom: 1px solid #e1e1ff;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .just-right {
-    display: inherit; }
+    display: inherit;
+  }
 
   .just-right.inline {
-    display: inline; }
+    display: inline;
+  }
 
   .course-schedule-table .headings {
     border-top: 1px solid #282880;
@@ -257,13 +326,17 @@ ul {
     margin-bottom: 0;
     font-weight: bold;
     display: inline-block;
-    padding: 0; } }
+    padding: 0;
+  }
+}
 @media only screen and (min-width: 959px) {
   .too-big {
-    display: inherit; }
+    display: inherit;
+  }
 
   .too-big.inline {
-    display: inline; }
+    display: inline;
+  }
 
   .course-schedule-table .headings {
     border-top: 1px solid #282880;
@@ -273,4 +346,6 @@ ul {
     margin-bottom: 0;
     font-weight: bold;
     display: inline-block;
-    padding: 0; } }
+    padding: 0;
+  }
+}
