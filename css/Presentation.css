@@ -249,7 +249,7 @@ ul {
 .responsive {
   display: none; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 574px) {
   header {
     position: relative; }
 
@@ -336,9 +336,13 @@ ul {
       display: inline; }
     .more .show-more {
       display: hidden; } }
-@media only screen and (min-width: 500px) and (max-width: 959px) {
+@media only screen and (min-width: 574px) and (max-width: 959px) {
   header {
     position: relative; }
+
+  .menu .menu-nav-list a {
+    padding-left: 0em;
+    padding-right: 1em; }
 
   .just-right {
     display: inherit; }
