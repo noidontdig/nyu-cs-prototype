@@ -115,13 +115,13 @@ footer ul {
 }
 footer ul li:after {
   color: #999999;
-  content: " \00b7 ";
+  content: "  \00b7  ";
 }
 footer ul li:last-child:after {
   content: "";
 }
 footer ul li:last-child:before {
-  content: " ";
+  content: "  ";
 }
 footer a {
   font-weight: normal;
