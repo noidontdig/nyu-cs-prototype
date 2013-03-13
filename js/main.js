@@ -16,11 +16,11 @@ $(function() {
 			totalHeight += $(this).outerHeight();
 		});
 
-		$p.css({"max-height" : 9999});			
+		$p.css({"max-height" : "none"});			
 		$up
 			.css({
 				// Set height to prevent instant jumpdown when max height is removed
-				"height": 45,
+				"height": 50,
 			})
 			.animate({
 				"height": totalHeight
@@ -38,8 +38,8 @@ $(function() {
   	$p  = $el.parent()
   	$up = $p.parent();
   	
-  	$up.animate({"height" : 45}, { complete: function() {
-  	  $p.css({"max-height" : 45, "height" : "auto"});
+  	$up.animate({"height" : 50}, { complete: function() {
+  	  $p.css({"max-height" : 50, "height" : "auto"});
   	  $p.find(".read-more").css({"display" : "inline"});
     	$el.css({"display" : "none"});
   	}});
