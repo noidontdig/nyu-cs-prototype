@@ -184,8 +184,8 @@ ul {
   height: 4.5em;
 }
 .menu .logo-wrapper {
-  width: 189px;
-  background: url("../img/cs_logo1.png");
+  width: 300px;
+  background: url("../img/cs_logo2.png") no-repeat;
   height: 100%;
   float: left;
 }

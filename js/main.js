@@ -20,13 +20,13 @@ $(function() {
 		$up
 			.css({
 				// Set height to prevent instant jumpdown when max height is removed
-				"height": $up.height(),
+				"height": 45,
 			})
 			.animate({
 				"height": totalHeight
-			}, function() {
+			}, { complete: function() {
 			  $el.css({"display" : "none"});
-			});
+			}});
 		$ps.find(".close-more").css({"display":"inline"});
 		// prevent jump-down
 		return false;
@@ -37,10 +37,13 @@ $(function() {
   	$el = $(this);
   	$p  = $el.parent()
   	$up = $p.parent();
-  	$p.css({"max-height" : 40, "height" : "auto"});
-  	$up.animate({"height" : "auto"});
-  	$p.find(".read-more").css({"display" : "inline"});
-  	$el.css({"display" : "none"});
+  	
+  	$up.animate({"height" : 45}, { complete: function() {
+  	  $p.css({"max-height" : 45, "height" : "auto"});
+  	  $p.find(".read-more").css({"display" : "inline"});
+    	$el.css({"display" : "none"});
+  	}});
+  	
   	return false;
   });
 });
