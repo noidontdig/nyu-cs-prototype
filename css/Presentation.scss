@@ -136,6 +136,11 @@ footer {
   clear: both;
 }
 
+select {
+  height: rhythm();
+  background-color: $light;
+  border-color: $footer-grey;
+}
 
 tr { text-align: left; }
 th { padding-right: 1em; }
