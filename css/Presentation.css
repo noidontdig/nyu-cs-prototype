@@ -1,7 +1,6 @@
 /******************************************************/
 body {
   line-height: 1.5em;
-  background-image: url("debug/rhythm24.gif");
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
