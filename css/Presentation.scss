@@ -291,6 +291,7 @@ ul { list-style-type: none; }
 
 .responsive { display: none; }
 
+
 @media only screen and(max-width: 574px)  {
   header { position: relative; }
 
@@ -398,6 +399,10 @@ ul { list-style-type: none; }
       padding: 0;
     }
   }
+
+  .show-menu { display: hidden; }
+  .show-more { display: inline; }
+
 
 }
 

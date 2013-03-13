@@ -358,7 +358,13 @@ ul {
     margin-bottom: 0;
     font-weight: bold;
     display: inline-block;
-    padding: 0; } }
+    padding: 0; }
+
+  .show-menu {
+    display: hidden; }
+
+  .show-more {
+    display: inline; } }
 @media only screen and (min-width: 959px) {
   header {
     position: fixed;
