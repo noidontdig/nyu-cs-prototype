@@ -88,7 +88,8 @@
         .container .one.columns                     { width: auto; max-width: 28px; }
         .container .two.columns                     { width: auto; max-width: 76px; }
         .container .three.columns                   { width: auto; max-width: 124px; }
-        .container .four.columns                    { width: auto; max-width: 172px; }
+        .container .four.columns                    { width: auto; max-width: 150px; }
+        .container .four.columns.nofloat            { float: none;}       
         .container .five.columns                    { width: auto; max-width: 220px; }
         .container .six.columns                     { width: auto; max-width: 268px; }
         .container .seven.columns                   { width: auto; max-width: 316px; }
@@ -96,7 +97,7 @@
         .container .nine.columns                    { width: auto; max-width: 412px; }
         .container .ten.columns                     { width: auto; max-width: 460px; }
         .container .eleven.columns                  { width: auto; max-width: 508px; }
-        .container .twelve.columns                  { width: auto; max-width: 556px; }
+        .container .twelve.columns                  { width: auto; max-width: 460px; }
         .container .thirteen.columns                { width: auto; max-width: 604px; }
         .container .fourteen.columns                { width: auto; max-width: 652px; }
         .container .fifteen.columns                 { width: auto; max-width: 700px; }
