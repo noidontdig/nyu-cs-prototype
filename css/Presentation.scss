@@ -329,16 +329,15 @@ ul { list-style-type: none; }
     &:before { content: attr(data-title) ": "; }
   }
   
-  li { 
-    max-height: none;
-    .row {
-      max-height: none; height: auto;
-    }
-    .description { 
-      max-height: none; height: auto;
-      .read-more { display: none; }
-      .close-more { display: none; }
-    }
+  .row {
+    max-height: none; height: auto;
+    li { max-height: none; height: auto;}
+    .description { max-height: none; height: auto;}
+  }
+  
+  .description {
+    .read-more { display: none; }
+    .close-more { display: none; }
   }
 
   .course-schedule-table, .admissions-table {
@@ -384,12 +383,11 @@ ul { list-style-type: none; }
       }
     }
   }
-
+  
   .just-right { display: inherit; }
   .just-right.inline { display: inline; }
-  
-  admissions-table {
 
+  .admissions-table {
     .headings { 
       border-top: 1px solid $dark;
       border-bottom: 1px solid $dark;
@@ -400,11 +398,18 @@ ul { list-style-type: none; }
       padding: 0;
     }
   }
+
+  .show-menu { display: hidden; }
+  .show-more { display: inline; }
+
+  .events-wrapper {
+    float: none;
+  }
   
   .container {
     padding: 0 15px;
   }
-  .container .course, .container .row{
+  .container .course, .container .row {
     clear: both; 
     float: left;
   }
@@ -418,16 +423,7 @@ ul { list-style-type: none; }
   .container .course .columns.instructor, { clear: both; margin-left: 0;}
 
   .container .course .column.days,
-  .container .course .columns.days, { 
-    clear: both;
-    margin-left: 0px;
-  }
-  
-  .show-menu { display: hidden; }
-  .show-more { display: inline; }
-
-  .events-wrapper {
-    float: none;
+  .container .course .columns.days, { clear: both; margin-left: 0px;}
     
   .container .course .column.time,
   .container .course .columns.time, {
@@ -494,4 +490,3 @@ ul { list-style-type: none; }
   }
 }
 
-}
