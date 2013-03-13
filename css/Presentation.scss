@@ -1,5 +1,5 @@
 
-$debug: false;
+$debug: true;
 
 @import "Constants";
 @import "Rhythm";
@@ -226,11 +226,57 @@ ul { list-style-type: none; }
   }
 }
 
-
 .course-schedule-table {
   font-size: $h6-font-size;
   ul { margin: 0; padding: 0; }
   li { display: inline-block; }
+}
+
+.admissions-wrapper {
+  $list-margin: 50px;
+  $sub-list-margin: 20px;
+  $dt-font-size: $base-font-size * 0.8;
+
+  dt, dd {
+    font-size: $dt-font-size;
+  }
+  dt {
+    font-weight: bold; 
+    @include v-margin(rhythm(1, $dt-font-size), 0);
+  }
+  dd {
+    @include v-margin(rhythm(0, $dt-font-size), 0);
+    margin-left: 0; 
+  }  
+  .six.columns:after {
+    content: "\A\A";
+    white-space: pre;  
+  }
+  .section {
+    clear: both;
+    display: block;
+  } 
+  ul {
+    @include v-margin(0);
+    // list-style-type: none;
+    margin-left: $list-margin;
+  }
+  ol {
+    margin-left: $list-margin;
+  }
+  ol.msis-qualifications {
+    li {
+      ul {
+        margin-left: $sub-list-margin;
+        li:before {
+          // content: "- "
+        }
+      }
+    }
+  }
+  .category {
+    font-weight: bold;
+  }
 }
 
 

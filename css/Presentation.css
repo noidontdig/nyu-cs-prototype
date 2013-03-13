@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /******************************************************/
 body {
   line-height: 1.5em;
@@ -5,6 +6,18 @@ body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
+=======
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/******************************************************/
+body {
+  line-height: 1.5em;
+  background-image: url("debug/rhythm24.gif");
+  font-family: Verdana, Geneva, sans-serif;
+>>>>>>> styling admissions
 }
 
 h1 {
@@ -30,11 +43,25 @@ h4 {
   margin-bottom: 1.5em;
   font-size: 16px;
 }
+<<<<<<< HEAD
 
 h5 {
   margin-top: 1.6667em;
   margin-bottom: 1.6667em;
   font-size: 14.4px;
+=======
+
+h4 {
+  margin-top: 1.6667em;
+  margin-bottom: 1.6667em;
+  font-size: 14.4px;
+}
+
+h5 {
+  margin-top: 1.875em;
+  margin-bottom: 1.875em;
+  font-size: 12.8px;
+>>>>>>> styling admissions
 }
 
 h6 {
@@ -109,13 +136,21 @@ footer ul {
 }
 footer ul li:after {
   color: #999999;
+<<<<<<< HEAD
   content: " \00b7 ";
+=======
+  content: "  \00b7  ";
+>>>>>>> styling admissions
 }
 footer ul li:last-child:after {
   content: "";
 }
 footer ul li:last-child:before {
+<<<<<<< HEAD
   content: " ";
+=======
+  content: "  ";
+>>>>>>> styling admissions
 }
 footer a {
   font-weight: normal;
@@ -125,6 +160,7 @@ footer a {
 footer a:hover {
   color: #777777;
 }
+<<<<<<< HEAD
 
 tr {
   text-align: left;
@@ -151,6 +187,8 @@ tr, th, td {
 ul {
   list-style-type: none;
 }
+=======
+>>>>>>> styling admissions
 
 /************************************/
 .down-arrow {
@@ -172,8 +210,13 @@ ul {
   height: 4.5em;
 }
 .menu .logo-wrapper {
+<<<<<<< HEAD
   width: 189px;
   background: url("../img/cs_logo1.png");
+=======
+  width: 140px;
+  background-color: purple;
+>>>>>>> styling admissions
   height: 100%;
   float: left;
 }
@@ -215,6 +258,10 @@ ul {
 .events-wrapper ul {
   margin-top: 0;
   margin-bottom: 0;
+<<<<<<< HEAD
+=======
+  list-style-type: none;
+>>>>>>> styling admissions
 }
 
 .news-wrapper {
@@ -237,6 +284,7 @@ ul {
   white-space: pre;
 }
 
+<<<<<<< HEAD
 .course-schedule-table {
   font-size: 11.2px;
 }
@@ -246,6 +294,42 @@ ul {
 }
 .course-schedule-table li {
   display: inline-block;
+=======
+.admissions-wrapper dt, .admissions-wrapper dd {
+  font-size: 12.8px;
+}
+.admissions-wrapper dt {
+  font-weight: bold;
+  margin-top: 1.875em;
+  margin-bottom: 0;
+}
+.admissions-wrapper dd {
+  margin-top: 0em;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.admissions-wrapper .six.columns:after {
+  content: "\A\A";
+  white-space: pre;
+}
+.admissions-wrapper .section {
+  clear: both;
+  display: block;
+}
+.admissions-wrapper ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 50px;
+}
+.admissions-wrapper ol {
+  margin-left: 50px;
+}
+.admissions-wrapper ol.msis-qualifications li ul {
+  margin-left: 20px;
+}
+.admissions-wrapper .category {
+  font-weight: bold;
+>>>>>>> styling admissions
 }
 
 /* Responsive */
@@ -261,6 +345,7 @@ ul {
   .too-small.inline {
     display: inline;
   }
+<<<<<<< HEAD
 
   .container .course .column,
   .container .course .columns {
@@ -308,6 +393,8 @@ ul {
     padding: 1.5em 0;
     border-bottom: 1px solid #e1e1ff;
   }
+=======
+>>>>>>> styling admissions
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .just-right {
@@ -317,6 +404,7 @@ ul {
   .just-right.inline {
     display: inline;
   }
+<<<<<<< HEAD
 
   .course-schedule-table .headings {
     border-top: 1px solid #282880;
@@ -328,6 +416,8 @@ ul {
     display: inline-block;
     padding: 0;
   }
+=======
+>>>>>>> styling admissions
 }
 @media only screen and (min-width: 959px) {
   .too-big {
@@ -337,6 +427,7 @@ ul {
   .too-big.inline {
     display: inline;
   }
+<<<<<<< HEAD
 
   .course-schedule-table .headings {
     border-top: 1px solid #282880;
@@ -348,4 +439,6 @@ ul {
     display: inline-block;
     padding: 0;
   }
+=======
+>>>>>>> styling admissions
 }
