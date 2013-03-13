@@ -192,7 +192,7 @@ ul { list-style-type: none; }
 
     a { 
       float: left;
-      padding: rhythm();
+      padding: rhythm() rhythm()*2/3;
     }
   }
 }
