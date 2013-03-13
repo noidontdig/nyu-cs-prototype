@@ -232,6 +232,10 @@ ul { list-style-type: none; }
   li { display: inline-block; }
 }
 
+.course-schedule-table {
+  .description { max-height: rhythm(3); overflow: hidden;}
+}
+
 .admissions-wrapper {
   $list-margin: 50px;
   $sub-list-margin: 20px;
@@ -349,6 +353,10 @@ ul { list-style-type: none; }
     }
   }
 
-
+  .course-schedule-table {
+    li {
+      &:hover { background-color: $very-light-grey; };
+    }
+  }
 }
 

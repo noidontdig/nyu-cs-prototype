@@ -109,13 +109,13 @@ footer ul {
 }
 footer ul li:after {
   color: #999999;
-  content: "  \00b7  ";
+  content: " \00b7 ";
 }
 footer ul li:last-child:after {
   content: "";
 }
 footer ul li:last-child:before {
-  content: "  ";
+  content: " ";
 }
 footer a {
   font-weight: normal;
@@ -246,6 +246,11 @@ ul {
 }
 .course-schedule-table li, .admissions-table li {
   display: inline-block;
+}
+
+.course-schedule-table .description {
+  max-height: 4.5em;
+  overflow: hidden;
 }
 
 .admissions-wrapper dt {
@@ -381,5 +386,9 @@ ul {
     font-weight: bold;
     display: inline-block;
     padding: 0;
+  }
+
+  .course-schedule-table li:hover {
+    background-color: #e8e8ee;
   }
 }
