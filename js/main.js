@@ -1,9 +1,8 @@
 // DOM Ready
 $(function() {
-
-	var $el, $ps, $up, totalHeight;
 	
 	$(".read-more").click(function() {
+	  var $el, $ps, $up, totalHeight;
 		// IE 7 doesn't even get this far. I didn't feel like dicking with it.
 		totalHeight = 0
 	
@@ -25,21 +24,23 @@ $(function() {
 			})
 			.animate({
 				"height": totalHeight
+			}, function() {
+			  $el.css({"display" : "none"});
 			});
-		
-		$el.remove();
-		
-		$p.append('<a href="#" class="close-more"> close </a>').click(function() {
-  	  console.log("here");
-  	  $el = $(this);
-  		$p  = $el.parent().find(".description");
-  		$up = $p.parent();
-  		console.log($p);
-  		$p.css({"max-height" : "4.5em", "height" : "4.5em"});
-  		$up.animate({"height" : "4.5em"});
-  		return false;
-  	});
+		$ps.find(".close-more").css({"display":"inline"});
 		// prevent jump-down
 		return false;
 	});
+	
+	$(".close-more").click(function() {
+	  var $el, $ps, $up, totalHeight;
+  	$el = $(this);
+  	$p  = $el.parent()
+  	$up = $p.parent();
+  	$p.css({"max-height" : 40, "height" : "auto"});
+  	$up.animate({"height" : "auto"});
+  	$p.find(".read-more").css({"display" : "inline"});
+  	$el.css({"display" : "none"});
+  	return false;
+  });
 });

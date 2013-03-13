@@ -246,7 +246,7 @@ ul { list-style-type: none; }
 
 .course-schedule-table {
   li { margin: 0; padding: 0;}
-  .row { margin-top: -5px; padding: 0;}
+  .row { @include v-margin(0); padding: 0;}
   .description { max-height: rhythm(3); overflow: hidden;}
   .close-more { display: none; }
   .column, .columns { @include v-margin(0); }
@@ -300,6 +300,9 @@ ul { list-style-type: none; }
 
   .container .course .column, 
   .container .course .columns { width: auto; clear: both; }
+  
+  .container .course .column.name, 
+  .container .course .columns.name { font-weight: bold; }
 
   .container .course .column.days,
   .container .course .columns.days, { 
@@ -327,8 +330,9 @@ ul { list-style-type: none; }
   }
   
   .row {
-    li { max-height: inherit; height: inherit;}
-    .description { max-height: inherit; height: inherit; overflow: hidden;}
+    max-height: none; height: auto;
+    li { max-height: none; height: auto;}
+    .description { max-height: none; height: auto;}
   }
   
   .description {

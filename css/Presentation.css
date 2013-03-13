@@ -115,13 +115,13 @@ footer ul {
 }
 footer ul li:after {
   color: #999999;
-  content: "  \00b7  ";
+  content: " \00b7 ";
 }
 footer ul li:last-child:after {
   content: "";
 }
 footer ul li:last-child:before {
-  content: "  ";
+  content: " ";
 }
 footer a {
   font-weight: normal;
@@ -265,7 +265,8 @@ ul {
   padding: 0;
 }
 .course-schedule-table .row {
-  margin-top: -5px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 .course-schedule-table .description {
@@ -338,6 +339,11 @@ ul {
     clear: both;
   }
 
+  .container .course .column.name,
+  .container .course .columns.name {
+    font-weight: bold;
+  }
+
   .container .course .column.days,
   .container .course .columns.days {
     clear: left;
@@ -371,14 +377,17 @@ ul {
     content: attr(data-title) ": ";
   }
 
+  .row {
+    max-height: none;
+    height: auto;
+  }
   .row li {
-    max-height: inherit;
-    height: inherit;
+    max-height: none;
+    height: auto;
   }
   .row .description {
-    max-height: inherit;
-    height: inherit;
-    overflow: hidden;
+    max-height: none;
+    height: auto;
   }
 
   .description .read-more {
