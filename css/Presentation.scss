@@ -95,9 +95,8 @@ a {
 
 
 header {
-  position: fixed;
   background: #fff;
-  z-index: 1000;
+  border-bottom: 1px solid #efefef;
 }
 
 header, footer {
@@ -197,16 +196,6 @@ ul { list-style-type: none; }
 }
 
 .menu-nav-list li { display: none; }
-
-.submenu {
-  height: rhythm();
-  margin-top: -2px; /* to offset the border effect */
-  border-top: 1px solid #efefef;
-  border-bottom: 1px solid #efefef;
-
-  nav { float: left; }
-}
-
 
 .events-wrapper {
   $dt-font-size: $base-font-size * 0.8;  
@@ -460,14 +449,6 @@ ul { list-style-type: none; }
 }
 
 @media only screen and (min-width: 959px) {
-  header { 
-    position: fixed;
-    -moz-box-shadow:     0px 0px 3px 2px $very-light-grey;
-    -webkit-box-shadow:  0px 0px 3px 2px $very-light-grey; 
-    box-shadow:          0px 0px 3px 2px $very-light-grey;
-  }
-  .content { padding-top: 6em; }
-
   .too-big    { display: inherit; }
   .too-big.inline    { display: inline; }
 

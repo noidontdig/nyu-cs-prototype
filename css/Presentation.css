@@ -85,9 +85,8 @@ a:hover {
 }
 
 header {
-  position: fixed;
   background: #fff;
-  z-index: 1000;
+  border-bottom: 1px solid #efefef;
 }
 
 header, footer {
@@ -198,17 +197,6 @@ ul {
 
 .menu-nav-list li {
   display: none;
-}
-
-.submenu {
-  height: 1.5em;
-  margin-top: -2px;
-  /* to offset the border effect */
-  border-top: 1px solid #efefef;
-  border-bottom: 1px solid #efefef;
-}
-.submenu nav {
-  float: left;
 }
 
 .events-wrapper dt, .events-wrapper dd {
@@ -551,17 +539,6 @@ ul {
   }
 }
 @media only screen and (min-width: 959px) {
-  header {
-    position: fixed;
-    -moz-box-shadow: 0px 0px 3px 2px #e8e8ee;
-    -webkit-box-shadow: 0px 0px 3px 2px #e8e8ee;
-    box-shadow: 0px 0px 3px 2px #e8e8ee;
-  }
-
-  .content {
-    padding-top: 6em;
-  }
-
   .too-big {
     display: inherit;
   }
